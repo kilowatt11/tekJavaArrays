@@ -5,22 +5,22 @@ import java.util.Random;
 
 public class Runner {
 	public static void main(String[] args) {
-//		slide33();
-//		slide43();
-//		exercise1();
-//		exercise2();
-//		exercise3();
-//		exercise4();
-//		exercise5();
-//		exercise6();
-//		exercise7();
-//		exercise8();
+		slide33();
+		slide43();
+		exercise1();
+		exercise2();
+		exercise3();
+		exercise4();
+		exercise5();
+		exercise6();
+		exercise7();
+		exercise8();
 		exercise9();
 		exercise10();
 	}
 
 	private static void slide33() {
-		System.out.println("Slide 32/33");
+		System.out.println("Slide 32/33:");
 		Random r = new Random();
 		int[] deck = new int[52];
 
@@ -33,16 +33,16 @@ public class Runner {
 
 		switch (drawCard) {
 		case 0:
-			System.out.println("Spades");
+			System.out.println("Card Selected: Spades");
 			break;
 		case 1:
-			System.out.println("Hearts");
+			System.out.println("Card Selected: Hearts");
 			break;
 		case 2:
-			System.out.println("Diamonds");
+			System.out.println("Card Selected: Diamonds");
 			break;
 		case 3:
-			System.out.println("Clubs");
+			System.out.println("Card Selected: Clubs");
 			break;
 		}
 	}
@@ -103,10 +103,10 @@ public class Runner {
 		// the new array to verify that the original array was copied.
 
 		String[] stringArr = { "red", "green", "blue", "yellow" };
-		System.out.println(stringArr.length);
+		System.out.println("Array length:" + stringArr.length);
 
 		String[] arrCopy = Arrays.copyOf(stringArr, stringArr.length);
-		System.out.println(Arrays.toString(arrCopy));
+		System.out.println("Copied Array: " + Arrays.toString(arrCopy));
 
 	}
 
